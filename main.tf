@@ -3,14 +3,14 @@ module "web_instances" {
   source         = "./modules/ec2"
   instance_count = 3
   instance_type  = "t2.micro"
-  ami_id         = "ami-0c55b159cbfafe1f0"
+  ami_id         = "ami-0150ccaf51ab55a51"
 }
 # security group configuration for custom security groups
 variable "security_groups" {
   default = {
-    "web_sg"  = 80,
-    "ssh_sg"  = 22,
-    "app_sg"  = 8080
+    "web_sg" = 80,
+    "ssh_sg" = 22,
+    "app_sg" = 8080
   }
 }
 # security group resource definition
